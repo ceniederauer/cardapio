@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.ceniederauer</groupId>
-	<artifactId>cardapio</artifactId>
+	<artifactId>API</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>cardapio</name>
 	<description>Cardapio Digital</description>
