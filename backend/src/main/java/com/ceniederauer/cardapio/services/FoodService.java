@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Service
@@ -35,5 +36,10 @@ public class FoodService {
         }
         Food foodData = new Food(data);
         foodRepository.save(foodData);
+    }
+
+    public Optional<Food> getById(Long id) {
+        Optional<Food> food = foodRepository.findById(id);
+        return food;
     }
 }
